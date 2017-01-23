@@ -734,6 +734,7 @@ font-weight: bold;
 }
 .search-form-date-in, .search-form-date-out {
   margin-bottom: 20px;
+  position: relative;
   input {
     font-weight: bold;
     text-transform: uppercase;
@@ -848,11 +849,12 @@ font-weight: bold;
     }
     .search-form-date__calendar-icon {
       top:10px;
+
     }
   }
   .search-form-date__calendar-icon {
     position: absolute;
-    left:510px;
+    right:110px;
     top:63px;
   }
 
@@ -900,15 +902,30 @@ width: 230px;
 }
 }
 @media #{$desktop-width}{
+  .main-search-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .main-search-form__map-button {
     margin-left: 27%;
     width: 47%;
   }
   .main-search-form-input {
-    width: 44%;
-    margin-left: 25.4%;
-    padding: 0;
-    padding-bottom: 30px;
+position: absolute;
+margin: 0;
+    width: 47%;
+  left: 50%;
+  margin-left: -295px;
+  top: 210px;
+
+  }
+  .search-form-date-in {
+    position: relative;
+  }
+  .search-form-date__calendar-icon {
+    right: 50px;
   }
 }
 /*map*/
