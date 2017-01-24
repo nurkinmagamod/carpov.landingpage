@@ -853,8 +853,8 @@ font-weight: bold;
     }
   }
   .search-form-date__calendar-icon {
-    position: absolute;
-    right:110px;
+    position: relative;
+    right:10px;
     top:63px;
   }
 
@@ -904,29 +904,31 @@ width: 230px;
 @media #{$desktop-width}{
   .main-search-form {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
   }
   .main-search-form__map-button {
-    margin-left: 27%;
+    display: inline-block;
+    text-align: center;
+    margin:  20px 0;
+    margin-bottom: 0;
     width: 47%;
+
   }
   .main-search-form-input {
 position: absolute;
 margin: 0;
     width: 47%;
-  left: 50%;
-  margin-left: -295px;
+    left: 50%;
+  transform: translateX(-50%);
   top: 210px;
+  text-align: justify;
+
 
   }
   .search-form-date-in {
     position: relative;
   }
-  .search-form-date__calendar-icon {
-    right: 50px;
-  }
+
 }
 /*map*/
 .map {
@@ -1002,6 +1004,7 @@ position: absolute;
     display: flex;
     position: absolute;
     top:-80px;
+    justify-content: space-between;
   }
   .main-footer__hash {
     margin-left: 8%;
@@ -1018,8 +1021,25 @@ position: absolute;
       margin-left: 8.41%;
   }
 }
-@media #{$desktop-width}{
+@media #{$desktop-width} {
+    .main-footer-copyright {
+      margin: 0;
 
+
+        margin-right: 8%;
+    }
+
+    .main-footer__hash {
+        padding-top: 10px;
+        margin: 0;
+        margin-left: 8%;
+    }
+
+    .main-footer-social-blocks {
+        padding-left: 100px;
+        margin: 0;
+
+    }
 }
 /*Hotels*/
 .hotel-header {

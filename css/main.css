@@ -849,8 +849,8 @@ body {
     top: 10px;
   }
   .search-form-date__calendar-icon {
-    position: absolute;
-    right: 110px;
+    position: relative;
+    right: 10px;
     top: 63px;
   }
   .main-search-form-input__number-warper {
@@ -896,12 +896,13 @@ body {
 @media (min-width: 1200px) {
   .main-search-form {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
   }
   .main-search-form__map-button {
-    margin-left: 27%;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 0;
     width: 47%;
   }
   .main-search-form-input {
@@ -909,14 +910,12 @@ body {
     margin: 0;
     width: 47%;
     left: 50%;
-    margin-left: -295px;
+    transform: translateX(-50%);
     top: 210px;
+    text-align: justify;
   }
   .search-form-date-in {
     position: relative;
-  }
-  .search-form-date__calendar-icon {
-    right: 50px;
   }
 }
 
@@ -997,6 +996,7 @@ body {
     display: flex;
     position: absolute;
     top: -80px;
+    justify-content: space-between;
   }
   .main-footer__hash {
     margin-left: 8%;
@@ -1010,6 +1010,22 @@ body {
   .main-footer-copyright {
     margin-top: 0px;
     margin-left: 8.41%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-footer-copyright {
+    margin: 0;
+    margin-right: 8%;
+  }
+  .main-footer__hash {
+    padding-top: 10px;
+    margin: 0;
+    margin-left: 8%;
+  }
+  .main-footer-social-blocks {
+    padding-left: 100px;
+    margin: 0;
   }
 }
 
