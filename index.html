@@ -1,85 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>«Карпов и Партнеры»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="warper">
+      <img class="header__logo" src="./img/logo_transparent.png" alt="К&P">
+      <nav>
+        <ul class="header__menu">
 
+          <li class="item"><a href="#">Запись на прием</a></li>
+          <li class="item"><a href="#">Контакты и адрес</a></li>
+          <li class="item"><a href="#">О Нас</a></li>
+          <li class="item"><a href="#">Виды услуг</a></li>
+           <div class="menu-icon-wrapper">
+            <div class="menu-icon"></div>
+          </div>
 
-  <div class="keys">
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
-    </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">hihat</span>
-    </div>
-    <div data-key="68" class="key">
-      <kbd>D</kbd>
-      <span class="sound">kick</span>
-    </div>
-    <div data-key="70" class="key">
-      <kbd>F</kbd>
-      <span class="sound">openhat</span>
-    </div>
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">boom</span>
-    </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">ride</span>
-    </div>
-    <div data-key="74" class="key">
-      <kbd>J</kbd>
-      <span class="sound">snare</span>
-    </div>
-    <div data-key="75" class="key">
-      <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-  </div>
+        </ul>
+      </nav>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+      <p class="header__tel">+7 925 47 15 65</p>
+        </div>
+    </header>
+    <main>
+        <section class="main-screen">
+          <h1 class="main-screen__title">
+            Юридическая компания <br> «Карпов и Партнеры»
+          </h1>
+        </section>
+        <section class="main-service">
+            <div class="test">
+              <h2 class="main-service__title">Оказываем следующие Юридические услуги</h1>
+            </div>
+            <div class="main-service__items">
+            <div class="main-service__item">
+              <p>взыскание долгов</p>
+            </div>
+            <div class="main-service__item">
+              <p>сопровождение исполнительного производства</p>
+            </div>
+            <div class="main-service__item">
+              <p>банкротство</p>
+            </div>
+            <div class="main-service__item">
+              <p>семейное право </p>
+            </div>
+            <div class="main-service__item">
+              <p>споры с застройщиками </p>
+            </div>
+            <div class="main-service__item">
+              <p>взыскание имущественного вреда </p>
+            </div>
+            <div class="main-service__item">
+              <p>защита прав потребителей </p>
+            </div>
+            <div class="main-service__item">
+              <p>налоговое право </p>
+            </div>
+            <div class="main-service__item">
+              <p>социальное обеспечение </p>
+            </div><div class="main-service__item">
+              <p>споры с госорганами</p>
+            </div>
+          </div>
+          </section>
+          <section class="main-check-in">
+            <h2 class="main-check-in-title title">Запись на прием</h2>
+            <form action="">
+            <div class="main-check-in__form">
+              <label>
+                Ваше имя:
+            </label>
+            <input type="text" name="name" value="Иван Петров" autofocus/>
+              <label for="phone">Телефон:</label>
+              <input type="tel" name="phone" id="phone" />
+              <label >Текст обращения:</label>
+              <textarea cols="30" rows="14"></textarea>
+            </div>
+              <input type="submit" value="Отправить"></input>
+            </form>
+          </section>
+          
+          <section class="main-map-contacts">
 
-<script>
-
-function playSound(e) {
-	const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-	const key = document.querySelector(`.key[data-key="${e.keyCode}"`);
-	if(!audio) return; 
-	audio.currentTime=0;
-	audio.play();
-	key.classList.add("playing");
-};
-
-
-function removeTransition(e) {
-	if(e.propertyName !== 'transform') return;
-	this.classList.remove('playing');
-};
-const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-
-window.addEventListener('keydown', playSound) 
-
-</script>
-
-
-</body>
+              <div class="main-map-contacts__contacts">
+                <h2>Контакты:</h2>
+                <a href="tel:+7 (383) 27 96 680">8(383)279-66-80</a><br>
+                <a href="tel:+7 (929) 38 26 942">8(929)382-69-42</a><br>
+                <a href="mailto: abc@example.com">Отправьте нам письмо abc@example.com</a><br>
+                <p class="adress">г. Новосибирск, проспект Дзержинского, 6</p>
+                <p class="work-time">График работы: <br> Пн-Пт с 10.00 до 19.00 <br>Обед с 13.00 до 14.00
+                </p>
+              </div>
+              <div class="main-map-contacts__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8a86594b0966ec3c6ffdcd263da8d4530bbcecb0cd59cd34781e18b507e4b649&amp;lang=ru_RU&amp;scroll=true"></script>
+              </div>
+          </section>
+      </main>
+      <footer class="main-footer">
+        <div class="copyright">
+          <p>
+            &copy 2020 - «Карпов и Партнеры»
+          </p>
+        </div>
+        
+        <div class="social">
+          <a href="#" class="face"><img width="35" height="35" src="/img/elegram.png" alt="telegram"></a>
+          <a href="#" class="tweet"><img width="35" height="35" src="img/k.png" alt="vk"></a>
+          <a href="#" class="linked"><img width="35" height="35" src="img/nstagram.png" alt="inst"></a>
+        </div>
+        <p><a href="#" class="support">Связаться с нами</a></p>
+      </footer>
+    <script src="./sripts/script.js"></script>
+  </body>
 </html>
