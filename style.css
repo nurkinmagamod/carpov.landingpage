@@ -290,7 +290,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 5rem 20%;
   }
   .test {
     margin-bottom: 50px;
@@ -333,6 +333,7 @@ a {
   .main-service__item h2 {
     color: black;
     font-size: 1.5rem;
+    padding-top: 2rem;
   }
 }
 /* main-form */
@@ -375,6 +376,7 @@ input {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+    padding-top: 4rem;
   }
   .main-map-contacts__item {
     display: flex;
