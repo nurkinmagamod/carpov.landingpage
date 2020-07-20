@@ -309,7 +309,7 @@ a {
   .main-service__items {
     display: flex;
     background-color: transparent;
-    justify-content: center;
+    flex-wrap: wrap;
   }
   .main-service__item {
     background-color: #fff;
@@ -317,10 +317,20 @@ a {
     border: 0.5px #ccc solid;
     font-weight: bold;
     transition: background 0.5s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20rem;
+    width: 30rem;
   }
   .main-service__item:hover {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.8);
+  }
+  .main-service__item h2 {
+    color: black;
+    font-size: 1.5rem;
   }
 }
 /* main-form */
