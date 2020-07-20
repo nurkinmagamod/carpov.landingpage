@@ -281,7 +281,7 @@ a {
 }
 @media all and (min-width: 960px) {
   .main-service {
-    min-height: 100vh;
+    min-height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 1), transparent),
       url('./img/3295243.jpg');
 
@@ -290,6 +290,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5rem 0;
   }
   .test {
     margin-bottom: 50px;
@@ -310,6 +311,7 @@ a {
     display: flex;
     background-color: transparent;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .main-service__item {
     background-color: #fff;
@@ -322,7 +324,7 @@ a {
     justify-content: center;
     align-items: center;
     min-height: 20rem;
-    width: 30rem;
+    width: 25rem;
   }
   .main-service__item:hover {
     cursor: pointer;
@@ -352,6 +354,7 @@ a {
 }
 input[type='submit'] {
   display: inline-block;
+  width: 100%;
   margin: 20px 5px;
   padding: 10px;
   color: #000;
@@ -368,42 +371,60 @@ input {
   border-radius: 5px;
 }
 @media all and (min-width: 960px) {
+  .main-check-in__warper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .main-map-contacts__item {
+    display: flex;
+  }
+  .main-map-contacts__item h3 {
+    padding: 1rem 0;
+  }
+  .main-map-contacts__item img {
+    position: relative;
+    top: 1rem;
+    right: 2rem;
+  }
+  .main-map-contacts__item:nth-of-type(3) img {
+    position: relative;
+    top: 6rem;
+    right: 2rem;
+  }
   .main-check-in {
-    background-color: #111;
+    background-color: #fff;
     min-height: 50vh;
-    color: white;
-    padding-top: 20px;
+    color: black;
   }
   .main-check-in-title {
     font-weight: bold;
     font-size: 3rem;
     text-transform: uppercase;
-    line-height: 55px;
-    font-family: 'Georgia', serif;
     color: #a38b70;
+  }
+  .main-check-in-title::after {
+    content: '';
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   }
   .main-check-in__form input[type='text'],
   .main-check-in__form input[type='tel'],
   .main-check-in__form textarea {
-    width: 500px;
     border: 2px solid #d5d5d5;
   }
   .main-check-in__form {
     display: flex;
     flex-direction: column;
-    width: 500px;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
   }
   form {
     display: block;
-    vertical-align: middle;
     text-align: center;
-    margin: 0 auto;
-
-    border: 1px solid #a38b70;
-    width: 600px;
+    width: 100rem;
   }
 }
 
@@ -435,6 +456,11 @@ input {
   background-color: blue;
   color: #ccc;
 }
+@media all and (min-width: 960px) {
+  .main-footer {
+    padding: 50px 0;
+  }
+}
 /* contacts */
 @media all and (min-width: 960px) {
   .main-map-contacts {
@@ -442,22 +468,17 @@ input {
   }
   .main-map-contacts__contacts {
     width: 100%;
-    color: #fff;
-
+    width: 300px;
     text-align: left;
     vertical-align: middle;
-    display: grid;
     margin-left: 50px;
     align-content: center;
   }
   .main-map-contacts__contacts a {
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
   .main-map-contacts__map {
     width: 100%;
     min-height: 500px;
-  }
-  .main-map-contacts__contacts h2 {
-    margin-top: 50px;
   }
 }
