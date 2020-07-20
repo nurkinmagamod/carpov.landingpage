@@ -15,7 +15,7 @@ html {
   margin: 0;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 header {
@@ -111,7 +111,7 @@ a {
   position: absolute;
   left: 0;
   top: -10px;
-  content: "";
+  content: '';
   width: 30px;
   height: 5px;
   background-color: #fff;
@@ -122,7 +122,7 @@ a {
   position: absolute;
   left: 0;
   top: 10px;
-  content: "";
+  content: '';
   width: 30px;
   height: 5px;
   background-color: #fff;
@@ -206,7 +206,7 @@ a {
 }
 /* main screen */
 .main-screen {
-  background-image: url("./img/background1.jpg");
+  background-image: url('./img/background1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
@@ -223,7 +223,7 @@ a {
 @media all and (min-width: 960px) {
   .main-screen {
     background: linear-gradient(rgba(0, 0, 0, 1), transparent),
-      url("./img/background1.jpg");
+      url('./img/background1.jpg');
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,7 +239,22 @@ a {
     font-size: 9rem;
   }
 }
+/*main-features */
+@media all and (min-width: 960px) {
+  .main-features {
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+  }
+  .main-features_feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* main-service */
+
 .main-service {
   text-align: center;
   color: #a38b70;
@@ -258,7 +273,7 @@ a {
   .main-service {
     height: 70vh;
     background: linear-gradient(rgba(0, 0, 0, 1), transparent),
-      url("./img/3295243.jpg");
+      url('./img/3295243.jpg');
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -277,7 +292,7 @@ a {
     margin: 0 auto;
     font-weight: bold;
     font-size: 3rem;
-    font-family: "Georgia", serif;
+    font-family: 'Georgia', serif;
     color: #a38b70;
     text-transform: uppercase;
   }
@@ -306,8 +321,8 @@ a {
 .main-check-in-title {
   text-align: center;
 }
-.main-check-in__form input[type="text"],
-.main-check-in__form input[type="tel"],
+.main-check-in__form input[type='text'],
+.main-check-in__form input[type='tel'],
 .main-check-in__form textarea {
   width: 100%;
   border: 2px solid #d5d5d5;
@@ -316,10 +331,10 @@ a {
   font-weight: bold;
   font-size: 24px;
   line-height: 55px;
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   color: #a38b70;
 }
-input[type="submit"] {
+input[type='submit'] {
   display: inline-block;
   margin: 20px 5px;
   padding: 10px;
@@ -331,7 +346,7 @@ input[type="submit"] {
 }
 input {
   padding: 2px 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   vertical-align: middle;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -348,11 +363,11 @@ input {
     font-size: 3rem;
     text-transform: uppercase;
     line-height: 55px;
-    font-family: "Georgia", serif;
+    font-family: 'Georgia', serif;
     color: #a38b70;
   }
-  .main-check-in__form input[type="text"],
-  .main-check-in__form input[type="tel"],
+  .main-check-in__form input[type='text'],
+  .main-check-in__form input[type='tel'],
   .main-check-in__form textarea {
     width: 500px;
     border: 2px solid #d5d5d5;
