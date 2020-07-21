@@ -16,8 +16,7 @@ html {
   margin: 0;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 header {
   position: fixed;
@@ -47,7 +46,11 @@ a {
 .item a:hover::after {
   color: #ccc;
 }
-
+@media all and (min-width: 960px) {
+  html {
+    font-size: 80%;
+  }
+}
 /* Mobile menu */
 .header__menu {
   position: fixed;
@@ -112,7 +115,7 @@ a {
   position: absolute;
   left: 0;
   top: -10px;
-  content: "";
+  content: '';
   width: 30px;
   height: 5px;
   background-color: #fff;
@@ -123,7 +126,7 @@ a {
   position: absolute;
   left: 0;
   top: 10px;
-  content: "";
+  content: '';
   width: 30px;
   height: 5px;
   background-color: #fff;
@@ -207,7 +210,7 @@ a {
 }
 /* main screen */
 .main-screen {
-  background-image: url("./img/background1.jpg");
+  background-image: url('./img/background1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
@@ -224,7 +227,7 @@ a {
 @media all and (min-width: 960px) {
   .main-screen {
     background: linear-gradient(rgba(0, 0, 0, 1), transparent),
-      url("./img/background1.jpg");
+      url('./img/background1.jpg');
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,6 +244,20 @@ a {
   }
 }
 /*main-features */
+.main-features {
+  display: inline;
+}
+.main-features_feature {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.main-features_feature__number {
+  display: none;
+}
+.main-features_feature p {
+  display: none;
+}
 @media all and (min-width: 960px) {
   .main-features {
     display: flex;
@@ -260,6 +277,7 @@ a {
     color: rgba(0, 0, 0, 0.1);
   }
   .main-features_feature p {
+    display: block;
     padding: 0 4rem;
     font-weight: lighter;
   }
@@ -284,7 +302,7 @@ a {
   .main-service {
     min-height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 1), transparent),
-      url("./img/3295243.jpg");
+      url('./img/3295243.jpg');
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -304,7 +322,7 @@ a {
     margin: 0 auto;
     font-weight: bold;
     font-size: 3rem;
-    font-family: "Georgia", serif;
+    font-family: 'Georgia', serif;
     color: #a38b70;
     text-transform: uppercase;
   }
@@ -338,23 +356,28 @@ a {
   }
 }
 /* main-form */
+.main-check-in {
+  color: #000;
+}
+.main-map-contacts__item a {
+  color: #000;
+}
 .main-check-in-title {
   text-align: center;
 }
-.main-check-in__form input[type="text"],
-.main-check-in__form input[type="tel"],
+.main-check-in__form input[type='text'],
+.main-check-in__form input[type='tel'],
 .main-check-in__form textarea {
   width: 100%;
   border: 2px solid #d5d5d5;
 }
 .main-check-in-title {
   font-weight: bold;
-  font-size: 24px;
-  line-height: 55px;
-  font-family: "Georgia", serif;
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
   color: #a38b70;
 }
-input[type="submit"] {
+input[type='submit'] {
   width: 100%;
   border: 0;
   outline: 0;
@@ -370,12 +393,12 @@ input[type="submit"] {
   cursor: pointer;
   font-weight: 600;
 }
-input[type="submit"]:hover {
+input[type='submit']:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
 input {
   padding: 2px 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   vertical-align: middle;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -415,17 +438,17 @@ input {
     color: #a38b70;
   }
   .main-check-in-title::after {
-    content: "";
+    content: '';
     display: block;
     width: 200px;
     margin: 0 auto;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   }
-  .main-check-in__form input[type="text"],
-  .main-check-in__form input[type="tel"],
+  .main-check-in__form input[type='text'],
+  .main-check-in__form input[type='tel'],
   .main-check-in__form textarea {
     /*border: 2px solid #d5d5d5;*/
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 2rem;
@@ -446,8 +469,8 @@ input {
     appearance: none;
     -webkit-appearance: none;
   }
-  .main-check-in__form input[type="text"]:focus,
-  .main-check-in__form input[type="tel"]:focus,
+  .main-check-in__form input[type='text']:focus,
+  .main-check-in__form input[type='tel']:focus,
   .main-check-in__form textarea:focus {
     box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
   }
@@ -498,6 +521,9 @@ input {
   }
 }
 /* contacts */
+.main-map-contacts__contacts {
+  text-align: center;
+}
 @media all and (min-width: 960px) {
   .main-map-contacts {
     display: flex;
