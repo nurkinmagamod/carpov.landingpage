@@ -31,13 +31,21 @@
   <body>
     <header>
       <div class="warper">
-        <img class="header__logo" src="./img/logo_transparent.png" alt="К&P" />
+        <h1>
+          <a href="#main"
+            ><img
+              class="header__logo"
+              src="./img/logo_transparent.png"
+              alt="К&P"
+          /></a>
+        </h1>
         <nav>
           <ul class="header__menu">
-            <li class="item"><a href="#">Запись на прием</a></li>
-            <li class="item"><a href="#">Контакты и адрес</a></li>
-            <li class="item"><a href="#">О Нас</a></li>
-            <li class="item"><a href="#">Виды услуг</a></li>
+            <li class="item"><a href="#features">О Нас</a></li>
+            <li class="item"><a href="#service">Виды услуг</a></li>
+            <li class="item"><a href="#check-in">Запись на прием</a></li>
+            <li class="item"><a href="#map">Контакты и адрес</a></li>
+
             <div class="menu-icon-wrapper">
               <div class="menu-icon"></div>
             </div>
@@ -47,14 +55,17 @@
         <p class="header__tel">+7 925 47 15 65</p>
       </div>
     </header>
-    <main>
+    <main id="main">
       <section class="main-screen">
         <h1 class="main-screen__title">
           Юридическая компания <br />
           «Карпов и Партнеры»
         </h1>
       </section>
-      <section class="main-features">
+      <section id="features" class="main-features">
+        <h2 class="main-features__title">
+          Наши приемущества
+        </h2>
         <div class="main-features_feature">
           <h2 class="main-features_feature__number">01</h2>
           <img
@@ -115,7 +126,7 @@
       </section>
       <section class="main-service">
         <div class="test">
-          <h2 class="main-service__title">
+          <h2 id="service" class="main-service__title">
             Оказываем следующие Юридические услуги
           </h2>
         </div>
@@ -226,7 +237,7 @@
           </div>
         </div>
       </section>
-      <section class="main-check-in">
+      <section id="check-in" class="main-check-in">
         <h2 class="main-check-in-title">Контакты</h2>
         <div class="main-check-in__warper">
           <div class="main-map-contacts__contacts">
@@ -259,6 +270,7 @@
           </div>
 
           <form action="">
+            <h3>Форма для обратной связи:</h3>
             <div class="main-check-in__form">
               <input
                 type="text"
@@ -282,14 +294,7 @@
       </section>
 
       <section class="main-map-contacts">
-        <div class="main-map-contacts__map">
-          <script
-            type="text/javascript"
-            charset="utf-8"
-            async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8a86594b0966ec3c6ffdcd263da8d4530bbcecb0cd59cd34781e18b507e4b649&amp;lang=ru_RU&amp;scroll=true"
-          ></script>
-        </div>
+        <div id="map" class="main-map-contacts__map"></div>
       </section>
     </main>
     <footer class="main-footer">
@@ -314,6 +319,26 @@
         <a href="#" class="support">г. Новосибирск, проспект Дзержинского, 6</a>
       </p>
     </footer>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = { lat: 55.04889, lng: 82.961667 };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
     <script src="./sripts/script.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAClwzcS-bzottj6aGmcd9-T3WHgisypos&callback=initMap"
+    ></script>
   </body>
 </html>
