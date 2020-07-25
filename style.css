@@ -16,7 +16,7 @@ html {
   margin: 0;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 header {
   position: fixed;
@@ -115,7 +115,7 @@ a {
   position: absolute;
   left: 0;
   top: -10px;
-  content: '';
+  content: "";
   width: 30px;
   height: 5px;
   background-color: #fff;
@@ -126,7 +126,7 @@ a {
   position: absolute;
   left: 0;
   top: 10px;
-  content: '';
+  content: "";
   width: 30px;
   height: 5px;
   background-color: #fff;
@@ -174,7 +174,7 @@ a {
     font-size: 1.5rem;
   }
   .header__menu .item a:hover::after {
-    content: '';
+    content: "";
     display: block;
     border: 1px #fff solid;
     position: relative;
@@ -221,7 +221,7 @@ a {
 }
 /* main screen */
 .main-screen {
-  background-image: url('./img/background1.jpg');
+  background-image: url("./img/background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 50vh;
@@ -238,7 +238,7 @@ a {
 @media all and (min-width: 960px) {
   .main-screen {
     background: linear-gradient(rgba(0, 0, 0, 1), transparent),
-      url('./img/background1.jpg');
+      url("./img/background1.jpg");
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -338,10 +338,11 @@ a {
 }
 .main-service__tabs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: rgba(4, 35, 56, 1);
 }
 [data-tab-content] {
   display: none;
@@ -352,17 +353,19 @@ a {
 .tab {
   cursor: pointer;
   padding: 10px;
+  width: 50%;
 }
 .tab.active {
   border: 2px black solid;
-  background-color: rgba(4, 35, 56, 1);
+  background-color: rgb(100, 158, 197);
+  color: #fff;
 }
 
 @media all and (min-width: 960px) {
   .main-service {
     min-height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 1), transparent),
-      url('./img/3295243.jpg');
+      url("./img/3295243.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -380,7 +383,7 @@ a {
     margin: 0 auto;
     font-weight: bold;
     font-size: 3rem;
-    font-family: 'Georgia', serif;
+    font-family: "Georgia", serif;
     color: #a38b70;
     text-transform: uppercase;
     background-color: transparent;
@@ -422,12 +425,24 @@ a {
     font-size: 2rem;
     padding-bottom: 1.5rem;
   }
+  .main-service__tabs {
+    background-color: transparent;
+    justify-content: space-around;
+  }
+  .tab.active {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+  }
   .tab.active::after {
-    content: '';
+    content: "";
     display: block;
     border-bottom: 1px rgb(255, 255, 255) solid;
     position: relative;
     top: 10px;
+  }
+  .tab {
+    width: auto;
   }
 }
 /* main-form */
@@ -440,8 +455,8 @@ a {
 .main-check-in-title {
   text-align: center;
 }
-.main-check-in__form input[type='text'],
-.main-check-in__form input[type='tel'],
+.main-check-in__form input[type="text"],
+.main-check-in__form input[type="tel"],
 .main-check-in__form textarea {
   width: 100%;
   border: 2px solid #d5d5d5;
@@ -449,10 +464,10 @@ a {
 .main-check-in-title {
   font-weight: bold;
   font-size: 2rem;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: #a38b70;
 }
-input[type='submit'] {
+input[type="submit"] {
   width: 100%;
   border: 0;
   outline: 0;
@@ -468,12 +483,12 @@ input[type='submit'] {
   cursor: pointer;
   font-weight: 600;
 }
-input[type='submit']:hover {
+input[type="submit"]:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
 input {
   padding: 2px 5px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   vertical-align: middle;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -514,17 +529,17 @@ input {
     color: #a38b70;
   }
   .main-check-in-title::after {
-    content: '';
+    content: "";
     display: block;
     width: 200px;
     margin: 0 auto;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   }
-  .main-check-in__form input[type='text'],
-  .main-check-in__form input[type='tel'],
+  .main-check-in__form input[type="text"],
+  .main-check-in__form input[type="tel"],
   .main-check-in__form textarea {
     /*border: 2px solid #d5d5d5;*/
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 2rem;
@@ -545,8 +560,8 @@ input {
     appearance: none;
     -webkit-appearance: none;
   }
-  .main-check-in__form input[type='text']:focus,
-  .main-check-in__form input[type='tel']:focus,
+  .main-check-in__form input[type="text"]:focus,
+  .main-check-in__form input[type="tel"]:focus,
   .main-check-in__form textarea:focus {
     box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
   }
