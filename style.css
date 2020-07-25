@@ -260,10 +260,13 @@ a {
 }
 .main-features__title {
   margin: auto;
-  margin-top: 2rem;
   display: block;
-  width: 200px;
+  width: 100%;
   text-align: center;
+  color: #a38b70;
+  background-color: rgba(4, 35, 56, 1);
+  padding: 1rem 0;
+  text-transform: uppercase;
 }
 
 .main-features_feature {
@@ -319,9 +322,12 @@ a {
   color: #a38b70;
   font-weight: bold;
 }
+
 .main-service__title {
   margin-top: 2rem;
   background-color: rgba(4, 35, 56, 1);
+  padding: 1rem 0;
+  text-transform: uppercase;
 }
 .main-service__item {
   text-align: center;
@@ -354,6 +360,7 @@ a {
   cursor: pointer;
   padding: 10px;
   width: 50%;
+  text-transform: uppercase;
 }
 .tab.active {
   border: 2px black solid;
@@ -416,7 +423,7 @@ a {
   .main-service__item img {
     display: block;
   }
-  .main-service__item h2 {
+  .main-service__item p {
     color: black;
     font-size: 1.5rem;
     padding-top: 2rem;
