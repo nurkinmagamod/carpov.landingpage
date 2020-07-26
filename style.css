@@ -24,7 +24,6 @@ header {
   width: 100%;
 }
 nav {
-  /*background-color: rgba(0, 0, 0, 0.8);*/
   padding: 0 15px;
 }
 a {
@@ -211,7 +210,7 @@ a {
     align-items: center;
   }
   header {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(5, 38, 57, 0.8);
   }
   .header__tel {
     display: block;
@@ -275,9 +274,6 @@ a {
   padding-left: 7rem;
   margin: 0 auto;
 }
-.main-features_feature__number {
-  display: none;
-}
 .main-features_feature img {
   position: relative;
   left: -6rem;
@@ -301,18 +297,18 @@ a {
   .main-features__title {
     display: none;
   }
-  .main-features_feature__number {
-    font-size: 7rem;
-    color: rgba(0, 0, 0, 0.1);
-    display: block;
-  }
+
   .main-features_feature img {
     position: static;
   }
-  .main-features_feature p {
+  .main-feature__title {
+    font-size: 2rem;
+  }
+  .main-feature__text {
     display: block;
-    padding: 0 4rem;
-    font-weight: lighter;
+    padding: 0 2rem;
+    font-weight: 400;
+    font-size: 1.2rem;
   }
 }
 /* main-service */
@@ -371,7 +367,7 @@ a {
 @media all and (min-width: 960px) {
   .main-service {
     min-height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 1), transparent),
+    background: linear-gradient(rgb(17, 22, 46), transparent),
       url("./img/3295243.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -591,7 +587,7 @@ input {
 /* footer */
 .main-footer {
   display: flex;
-  background-color: black;
+  background-color: rgba(5, 38, 57, 0.8);
   min-height: 50px;
   align-content: center;
   justify-content: center;
@@ -620,9 +616,6 @@ input {
   color: #ccc;
 }
 @media all and (min-width: 960px) {
-  .main-footer {
-    padding: 50px 0;
-  }
   .social {
     padding-right: 20px;
   }
@@ -634,9 +627,12 @@ input {
 @media all and (min-width: 960px) {
   .main-footer {
     display: flex;
-    background-color: black;
+    background-color: rgba(5, 38, 57, 0.8);
     min-height: 50px;
-    justify-content: space-between;
+    padding: 50px 0;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    flex-direction: row;
   }
   .main-map-contacts {
     display: flex;
@@ -655,5 +651,10 @@ input {
   .main-map-contacts__map {
     width: 100%;
     min-height: 500px;
+  }
+  .main-map-contacts__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem 0;
   }
 }
