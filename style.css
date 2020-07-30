@@ -37,6 +37,7 @@ a {
 
 .item {
   padding: 10px;
+  font-size: 2rem;
 }
 .item.button {
   padding: 9px 5px;
