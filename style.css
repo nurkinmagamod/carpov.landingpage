@@ -250,7 +250,7 @@ a {
   .main-screen__title {
     vertical-align: middle;
     color: #fff;
-    font-size: 9rem;
+    font-size: 6rem;
   }
 }
 /*main-features */
@@ -282,8 +282,8 @@ a {
 @media all and (min-width: 960px) {
   .main-features {
     display: flex;
-    align-items: center;
-    min-height: 25vh;
+    align-items: flex-start;
+    padding: 5rem 0;
   }
 
   .main-features_feature {
@@ -408,7 +408,7 @@ a {
     justify-content: center;
     align-items: center;
     min-height: 20rem;
-    width: 25rem;
+    width: 17rem;
     margin: 2rem 2.5rem;
   }
   .main-service__item:hover {
