@@ -57,7 +57,7 @@ a {
   width: 100%;
   top: 0;
   right: 0;
-  background-color: rgba(5, 38, 57, 0.8);
+  background-color: rgba(17, 18, 45, 1);
   z-index: 0;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -161,8 +161,8 @@ a {
     background: none;
   }
   .header__logo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 50px;
     z-index: 10;
     top: 0;
     position: relative;
@@ -211,7 +211,7 @@ a {
     align-items: center;
   }
   header {
-    background-color: rgba(5, 38, 57, 0.8);
+    background-color: rgba(17, 18, 45, 1);
   }
   .header__tel {
     display: block;
@@ -322,7 +322,7 @@ a {
 
 .main-service__title {
   margin-top: 2rem;
-  background-color: rgba(4, 35, 56, 1);
+  background-color: rgba(17, 18, 45, 1);
   padding: 1rem 0;
   text-transform: uppercase;
 }
@@ -588,7 +588,7 @@ input {
 /* footer */
 .main-footer {
   display: flex;
-  background-color: rgba(5, 38, 57, 0.8);
+  background-color: rgba(17, 18, 45, 1);
   min-height: 50px;
   align-content: center;
   justify-content: center;
@@ -628,7 +628,7 @@ input {
 @media all and (min-width: 960px) {
   .main-footer {
     display: flex;
-    background-color: rgba(5, 38, 57, 0.8);
+    background-color: rgba(17, 18, 45, 1);
     min-height: 50px;
     padding: 50px 0;
     font-size: 1.5rem;
