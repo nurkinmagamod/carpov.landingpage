@@ -416,7 +416,7 @@ a {
   .main-service__item:hover {
     cursor: pointer;
     transform: scale(1.01);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(41, 139, 143, 0.8);
   }
   .main-service__item img {
     display: block;
