@@ -163,8 +163,8 @@ a {
     background: none;
   }
   .header__logo {
-    width: 150px;
-    height: 50px;
+    width: 200px;
+    height: 100px;
     z-index: 10;
     top: 0;
     position: relative;
@@ -401,9 +401,8 @@ a {
     justify-content: center;
   }
   .main-service__item {
-    background-color: #fff;
-    color: #000;
-    border: 0.1rem rgb(0, 0, 0) solid;
+    background-color: rgba(17, 18, 45, 1);
+    border: 0.1rem #a38b70 solid;
     font-weight: bold;
     transition: background 0.5s ease-in;
     display: flex;
@@ -423,7 +422,7 @@ a {
     display: block;
   }
   .main-service__item p {
-    color: black;
+    color: #fff;
     font-size: 1.5rem;
     padding-top: 2rem;
   }
