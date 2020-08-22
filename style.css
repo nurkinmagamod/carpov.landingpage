@@ -289,6 +289,7 @@ a {
     display: flex;
     align-items: flex-start;
     padding: 5rem 0;
+    flex-wrap: wrap;
   }
 
   .main-features_feature {
@@ -298,7 +299,9 @@ a {
     align-items: center;
     text-align: left;
     padding-left: 0rem;
+    width: 450px;
   }
+
   .main-features__title {
     display: none;
   }
